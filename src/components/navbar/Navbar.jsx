@@ -1,7 +1,7 @@
 import {Link} from "react-router-dom";
 import React from "react";
 import logo from "../../assets/logo.png";
-import '../../components/navbar/Navbar.css'
+import './Navbar.css'
 import {motion} from "framer-motion";
 
 function Navbar(){
@@ -18,20 +18,15 @@ function Navbar(){
 
                 {/* Navlinks section */}
                 <div className="navlinks-div">
-                    <ul className="navlinks">
-                        <li>
-                            <Link to='/'>Products</Link>
-                        </li>
-                        <li>
-                            <Link to='/'>Custom Stories</Link>
-                        </li>
-                        <li>
-                            <Link to='/'>About</Link>
-                        </li>
-                        <li>
-                            <Link to='/'>Blogs</Link>
-                        </li>
-                    </ul>
+                    <div className="navlinks">
+                        <Link to='/'>Home</Link>
+                    </div>
+                    <div className="navlinks">
+                        <Link to='/'>Our Model</Link>
+                    </div>
+                    <div className="navlinks">
+                        <Link to='/'>About Us</Link>
+                    </div>
                 </div>
 
 

@@ -1,7 +1,7 @@
 import React from 'react'
-import "../Hero/hero.css"
+import "./hero.css"
 import HeroImage from "../../assets/hero.png"
-import { SlideUp } from '../../Utility/animations'
+import { SlideUp } from '../../../Utility/animations'
 import { motion } from 'framer-motion'
 
 const Hero = () => {

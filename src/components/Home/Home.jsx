@@ -1,13 +1,11 @@
-import Hero from "../Hero/hero";
 import Navbar from "../navbar/Navbar";
 
-function Landing(){
+function Home(){
     return(
         <main>
             <Navbar/>
-            <Hero/>
         </main>
     );
 }
 
-export default Landing;
+export default Home;

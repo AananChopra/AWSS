@@ -1,39 +1,41 @@
-/* primary: "#fe6b7e"
-brandwhite: #f5f9fc 
-darkBlue: #171a67*/
-
+a{
+    text-decoration: none;
+    color: #000;
+}
 
 .Navbar{
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     padding-top: 1.25rem;
     padding-bottom: 1.25rem; 
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    ul{
-        list-style-type: none;
-    }
 }
 
 .logo{
-    width: 10rem;
+    width: 8rem;
 }
 
 .navlinks-div{
-    padding-left: 2.5rem;
-    width: 500px;
     display: flex;
+    width: 600px;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .navlinks{
-    display: none; 
-    @media (min-width: 720px) { 
-    display: flex; 
+    font-size: larger;
+    a{
+        color: black;
     }
-    align-items: center;
-    gap: 1.25rem;
+}
+
+.navlinks:hover{
+    a{
+        color: #495D3A;
+        transition-duration: 50ms; 
+    }
 }
 
 .btn-touch{
@@ -48,7 +50,7 @@ darkBlue: #171a67*/
 }
 
 .btn-touch:hover{
-    background-color: #fe6b7e;
+    background-color: #495D3A;
     color: white;
     transition-duration: 300ms; 
 }
