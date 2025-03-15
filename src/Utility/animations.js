@@ -16,36 +16,54 @@ export const SlideUp = (delay) => {
 }
 
 export const SlideLeft = (delay) => {
-    return {
-      initial: {
-        x: 100,
-        opacity: 0,
+  return {
+    initial: {
+      x: 100,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        delay,
       },
-      animate: {
-        x: 0,
-        opacity: 1,
-        transition: {
-          duration: 0.5,
-          delay,
-        },
-      },
-    };
+    },
   };
+};
 
   
-  export const SlideRight = (delay) => {
-    return {
+export const SlideRight = (delay) => {
+  return {
+    initial: {
+      x: -100,
+      opacity: 0,
+    },
+    animate: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        duration: 0.5,
+        delay,
+      },
+    },
+  };
+};
+
+
+export const SlideDown = (delay) => {
+  return {
       initial: {
-        x: -100,
-        opacity: 0,
+          y: -100,
+          opacity: 0
       },
       animate: {
-        x: 0,
-        opacity: 1,
-        transition: {
-          duration: 0.5,
-          delay,
-        },
-      },
-    };
-  };
+          y: 0,
+          opacity: 1,
+          transition: {
+              delay: delay,
+              duration: 0.5
+          }
+      }
+  }
+}

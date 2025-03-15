@@ -1,0 +1,181 @@
+.Hero-section {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    background-image: url("../../assets/garbage_truck.webp");
+    background-size: cover;
+    height: 700px;
+    border-radius: 1rem;
+    display: flex;
+}
+
+.hero-section-text{
+    height: 90%;
+    width: 60%;
+    padding: 1rem 1rem 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.Upload-img-header{
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+    height: fit-content;
+    margin-bottom: 0px;
+}
+
+.upload-img-text{
+    height: fit-content;
+    margin-top: 0px;
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
+}
+
+.see-button{
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    button{
+        background-color: rgba(245, 245, 220, 0.1); /* Light transparent cream */
+        border: 2px solid white; /* Cream border */
+        padding: 0.8rem 1.5rem; /* More padding */
+        border-radius: 0.75rem; /* More rounded */
+        color: white; /* Text color */
+        font-weight: bold;
+        font-size: 1rem; /* Slightly bigger text */
+        transition: all 0.3s ease-in-out; 
+        backdrop-filter: blur(5px); /* Slight glass effect */
+    }
+}
+
+.see-button{
+    button:hover{
+        background-color: #F5F5DC; /* Cream on hover */
+        color: #21392e; /* Dark green text */
+        box-shadow: 0 4px 10px rgba(245, 245, 220, 0.3); /* Soft glow */
+        transform: scale(1.05); /* Slight scale effect */
+    }
+}
+
+.hero-section-image{
+    width: 40%;
+    padding: 1rem 1rem 3rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section-image-2 {
+    background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    width: 80%; 
+    max-width: 400px; /* Prevents it from stretching too much */
+    backdrop-filter: blur(8px); /* Glassmorphism effect */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow */
+}
+
+/* Ensuring text inside is visible */
+.hero-section-image-2 p {
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.hero-section-image-2 input {
+    background: rgba(255, 255, 255, 0.2); /* Light transparent white */
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    color: white;
+    font-size: 1rem;
+    width: 100%;
+    max-width: 350px;
+    text-align: center;
+    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Placeholder text visibility */
+.hero-section-image-2 input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.preview-image{
+    max-height: 200px;
+}
+
+
+/* .covid-19-risks{
+    height: 90px;
+    font-size: 3.2rem;
+    line-height: 1; 
+    font-weight: 700;
+    font: bold; 
+    color: #FFFFFF;
+}
+
+.covid-19-text{
+    color: #FFFFFF;
+    margin-top: 1rem; 
+    font-size: 1.25rem;
+    line-height: 1.75rem; 
+}
+
+
+.hero-section-text-2{
+    margin-top: 1rem; 
+    text-align: center;
+    margin-bottom: 2.5rem; 
+    margin-top: 6rem; 
+    margin-top: 1.5rem; 
+
+
+    @media (min-width: 768px) { 
+        text-align: left; 
+        margin-top: 0; 
+        margin-bottom: 0; 
+    }
+}
+
+.hero-section-image{
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.see-button{
+    background-color: ;
+    padding-top: 1rem;
+    padding-bottom: 1rem; 
+    padding-left: 1.5rem;
+    padding-right: 1.5rem; 
+    margin-top: 1rem; 
+    border-radius: 0.5rem; 
+    width: fit-content; 
+    margin-left: auto;
+    margin-right: auto;
+
+    @media (min-width: 768px) { 
+        margin-left: 0;
+        margin-right: 0; 
+    }
+
+    button{
+        background-color: transparent;
+        border: none;
+        color: white;
+        font-weight: 700; 
+    }
+}
+
+.see-button:hover{
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); 
+    transition-duration: 200ms;
+} */

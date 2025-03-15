@@ -3,12 +3,13 @@ import React from "react";
 import logo from "../../assets/logo.png";
 import './Navbar.css'
 import {motion} from "framer-motion";
+import {SlideDown} from "../../Utility/animations";
 
 function Navbar(){
     return(
-        <motion.header initial={{opacity:0 , x:-100}} 
-        animate={{opacity:1 , x:0}}
-        transition={{duration:0.5 , delay:0.8}}>
+        <motion.header variants={SlideDown(0)}
+        initial="initial"
+        whileInView={"animate"}>
             <div className="Navbar">
                 {/* logo section */}
                 <div>
