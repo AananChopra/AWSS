@@ -107,3 +107,73 @@
         overflow-x: hidden;
    }
 }
+
+
+@media (max-width: 1024px) {
+    .info-holder {
+        padding-top: 4rem; /* Reduce top padding on smaller screens */
+        gap: 3rem;
+    }
+
+    .info-holder-1,
+    .info-holder-2,
+    .info-holder-3 {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .info-holder-1-image,
+    .info-holder-2-image,
+    .info-holder-3-image {
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem; /* Adds spacing between image and text */
+    }
+
+    .info-holder-1-text h2,
+    .info-holder-2-text h2,
+    .info-holder-3-text h2 {
+        font-size: 1.8rem; /* Reduce heading size slightly */
+    }
+
+    .info-holder-1-text p,
+    .info-holder-2-text p,
+    .info-holder-3-text p {
+        font-size: 1rem; /* Reduce paragraph text size slightly */
+    }
+
+    .info-holder-1-image img,
+    .info-holder-2-image img,
+    .info-holder-3-image img {
+        width: 100%;
+        max-width: 400px; /* Prevents images from being too large */
+    }
+}
+
+@media (max-width: 768px) {
+    .info-holder {
+        padding-top: 3rem;
+        gap: 2rem;
+    }
+
+    .info-holder-1-text h2,
+    .info-holder-2-text h2,
+    .info-holder-3-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .info-holder-1-text p,
+    .info-holder-2-text p,
+    .info-holder-3-text p {
+        font-size: 0.95rem;
+    }
+
+    .info-holder-1-image img,
+    .info-holder-2-image img,
+    .info-holder-3-image img {
+        max-width: 300px;
+    }
+}
