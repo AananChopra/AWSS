@@ -67,3 +67,19 @@ export const SlideDown = (delay) => {
       }
   }
 }
+
+export const FooterAnimation = (delay) => {
+  return {
+    initial: { y: 100, opacity: 0, scale: 0.95 },
+    animate: { 
+      y: 0, 
+      opacity: 1, 
+      scale: 1,
+      transition: { 
+        delay: delay, 
+        duration: 0.6, 
+        ease: "easeOut"
+      } 
+    }
+  };
+};
