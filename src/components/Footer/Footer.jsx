@@ -22,7 +22,7 @@ const Footer = () => {
         transition={{ delay: 0.4, duration: 0.5 }}
       >
         <Link to="/">About</Link>
-        <Link to="/">Our Model</Link>
+        <Link to="/Our Model">Our Model</Link>
         <Link to="/">Contact</Link>
       </motion.div>
 

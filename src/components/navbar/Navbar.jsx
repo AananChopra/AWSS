@@ -23,7 +23,7 @@ function Navbar(){
                         <Link to='/'>Home</Link>
                     </div>
                     <div className="navlinks">
-                        <Link to='/'>Our Model</Link>
+                        <Link to='/Our Model'>Our Model</Link>
                     </div>
                     <div className="navlinks">
                         <Link to='/'>About Us</Link>
