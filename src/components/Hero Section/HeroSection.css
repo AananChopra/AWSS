@@ -89,6 +89,7 @@
     }
 
     .hero-content p {
+        padding-left: 0rem;
         font-size: 1rem;
         max-width: 100%;
     }

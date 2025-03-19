@@ -23,10 +23,10 @@ function Navbar(){
                         <Link to='/'>Home</Link>
                     </div>
                     <div className="navlinks">
-                        <Link to='/Our Model'>Our Model</Link>
+                        <Link to='/OurModel'>Our Model</Link>
                     </div>
                     <div className="navlinks">
-                        <Link to='/'>About Us</Link>
+                        <Link to='/AboutUs'>About Us</Link>
                     </div>
                 </div>
 
