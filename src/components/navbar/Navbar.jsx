@@ -33,7 +33,7 @@ function Navbar(){
 
                 {/* button section */}
                 <div>
-                    <button className="btn-touch">Get In Touch</button>
+                <Link to='/ContactUs'><button className="btn-touch">Get In Touch</button></Link>
                 </div>
             </div>
         </motion.header>

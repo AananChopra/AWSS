@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import { FaLinkedin, FaInstagram, FaGithub } from "react-icons/fa";
 import { FooterAnimation } from "../../Utility/animations";
 import "./Footer.css";
 
@@ -23,7 +22,7 @@ const Footer = () => {
       >
         <Link to="/AboutUs">About</Link>
         <Link to="/OurModel">Our Model</Link>
-        <Link to="/">Contact</Link>
+        <Link to="/ContactUs">Contact</Link>
       </motion.div>
     </motion.footer>
   );
