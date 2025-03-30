@@ -23,26 +23,28 @@ The system uses a three-layer machine learning model:
 Follow these steps to set up the project locally:
 
 1. **Clone the Repository:**
-    git clone https://github.com/ShauviqMishra/awss.git
+    git clone https://github.com/ShauviqMishra/awss.git  
     cd awss
 
 2. **Backend Setup:**
-    cd backend
-    python -m venv env
-    source env/bin/activate  # On Windows: env\Scripts\activate
-    pip install -r requirements.txt
-    python manage.py runserver
+    cd backend  
+    python -m venv env  
+    source env/bin/activate  # On Windows: env\Scripts\activate  
+    pip install -r requirements.txt  
+    python manage.py runserver  
 
 3. **Frontend Setup:**
-    cd AWSS
-    npm install
-    npm run dev
+    cd AWSS  
+    npm install  
+    npm run dev  
 
 The app will be available at `http://localhost:3000/`
 
 ## 🖼️ Screenshots
 - **Homepage:**
   ![Homepage](./src/assets/SC-1.png)
+
+  
 - **Our Model**
   ![Image Upload](./src/assets/SC-2.png)
 
