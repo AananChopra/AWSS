@@ -41,11 +41,11 @@ Follow these steps to set up the project locally:
 The app will be available at `http://localhost:3000/`
 
 ## 🖼️ Screenshots
-- **Homepage:**
+- **Homepage**  
   ![Homepage](./src/assets/SC-1.png)
 
-  
-- **Our Model**
+
+- **Our Model**  
   ![Image Upload](./src/assets/SC-2.png)
 
 
