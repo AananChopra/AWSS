@@ -92,14 +92,14 @@ const Upload = () => {
           {/* File Input */}
           <input type='file' accept='image/*' onChange={handleImageChange} />
         </div>
-      </motion.div>
-
-      {/* Response Message Display */}
-      {responseMessage && (
-        <div className={`result-container ${responseMessage.includes('Error') ? 'error-message' : 'success-message'}`}>
-          <p>{responseMessage}</p>
-        </div>
+        
+        {/* Response Message Display */}
+        {responseMessage && (
+          <div className={`result-container ${responseMessage.includes('Error') ? 'error-message' : 'success-message'}`}>
+            <p>{responseMessage}</p>
+          </div>
       )}
+      </motion.div>
     </div>
   );
 };

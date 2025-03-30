@@ -1,3 +1,4 @@
+/* General Styling */
 .Hero-section {
     margin-top: 1rem;
     margin-left: 1rem;
@@ -13,7 +14,7 @@
 .hero-section-text{
     height: 90%;
     width: 60%;
-    padding: 1rem 1rem 1rem 1rem;
+    padding: 1rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,13 +25,9 @@
     font-weight: bold;
     font-size: 2.5rem;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
-    height: fit-content;
-    margin-bottom: 0px;
 }
 
 .upload-img-text{
-    height: fit-content;
-    margin-top: 0px;
     color: rgb(255, 255, 255);
     font-size: 1.2rem;
     text-shadow: 2px 2px 5px rgba(0,0,0,0.6);
@@ -40,57 +37,56 @@
     width: 85%;
     display: flex;
     justify-content: center;
-    button{
-        background-color: rgba(245, 245, 220, 0.1); /* Light transparent cream */
-        border: 2px solid white; /* Cream border */
-        padding: 0.8rem 1.5rem; /* More padding */
-        border-radius: 0.75rem; /* More rounded */
-        color: white; /* Text color */
-        font-weight: bold;
-        font-size: 1rem; /* Slightly bigger text */
-        transition: all 0.3s ease-in-out; 
-        backdrop-filter: blur(5px); /* Slight glass effect */
-    }
 }
 
-.see-button{
-    button:hover{
-        background-color: #F5F5DC; /* Cream on hover */
-        color: #21392e; /* Dark green text */
-        box-shadow: 0 4px 10px rgba(245, 245, 220, 0.3); /* Soft glow */
-        transform: scale(1.05); /* Slight scale effect */
-    }
+.see-button button{
+    background-color: rgba(245, 245, 220, 0.1);
+    border: 2px solid white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.75rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    backdrop-filter: blur(5px);
 }
 
+.see-button button:hover{
+    background-color: #F5F5DC;
+    color: #21392e;
+    box-shadow: 0 4px 10px rgba(245, 245, 220, 0.3);
+    transform: scale(1.05);
+}
+
+/* Hero Section Image & Response */
 .hero-section-image{
     width: 40%;
-    padding: 1rem 1rem 3rem 1rem;
+    padding: 1rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
 .hero-section-image-2 {
-    background: rgba(0, 0, 0, 0.6); /* Dark semi-transparent background */
+    background: rgba(0, 0, 0, 0.6);
     padding: 1.5rem;
     border-radius: 0.75rem;
     text-align: center;
     width: 80%; 
-    max-width: 400px; /* Prevents it from stretching too much */
-    backdrop-filter: blur(8px); /* Glassmorphism effect */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Soft shadow */
+    max-width: 400px;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-/* Ensuring text inside is visible */
 .hero-section-image-2 p {
     color: white;
     font-size: 1.2rem;
     font-weight: bold;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
 }
 
 .hero-section-image-2 input {
-    background: rgba(255, 255, 255, 0.2); /* Light transparent white */
+    background: rgba(255, 255, 255, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.4);
     padding: 0.8rem;
     border-radius: 0.5rem;
@@ -98,39 +94,56 @@
     font-size: 1rem;
     width: 100%;
     max-width: 350px;
-    text-align: center;
-    box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.3);
-}
-
-/* Placeholder text visibility */
-.hero-section-image-2 input::placeholder {
-    color: rgba(255, 255, 255, 0.7);
 }
 
 .preview-image{
     max-height: 200px;
+    margin-bottom: 1rem;
 }
 
-/* Result Container */
+/* Response Message Styling */
 .result-container {
     margin-top: 1rem;
     padding: 1rem;
-    background-color: #e3f2fd;
     border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 80%;
+    max-width: 400px;
     text-align: center;
     font-size: 1.2rem;
-    color: #21392e;
+    font-weight: bold;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+.success-message {
+    background-color: #dff0d8;
+    color: #3c763d;
 }
 
 .error-message {
-    color: #d32f2f;
-    font-weight: bold;
+    background-color: #f2dede;
+    color: #a94442;
 }
 
-@media (max-width: 1024px) { /* Tablets */
+.success-message p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #3c763d;
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+  .error-message p {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #a94442;
+    margin: 0;
+    line-height: 1.5;
+  }
+  
+
+/* Responsive Design */
+@media (max-width: 1024px) {
     .Hero-section {
-        height: 500px;
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -138,7 +151,7 @@
 
     .hero-section-text {
         width: 90%;
-        padding: 1rem;
+        display: flex;
         justify-content: center;
     }
 
@@ -148,7 +161,6 @@
 
     .hero-section-image {
         width: 90%;
-        padding: 1rem;
     }
 
     .hero-section-image-2 {
@@ -156,16 +168,15 @@
     }
 }
 
-@media (max-width: 768px) { /* Mobile devices */
+@media (max-width: 768px) {
     .Hero-section {
-        height: auto;
         padding: 1rem;
     }
 
     .hero-section-text {
         width: 100%;
+        display: flex;
         flex-direction: column;
-        text-align: center;
         align-items: center;
     }
 
@@ -179,17 +190,15 @@
 
     .see-button {
         width: 75%;
-        margin-top: 1rem;
+        padding-left: 3.5rem;
     }
 
     .hero-section-image {
         width: 100%;
-        padding: 1rem 0;
     }
 
     .hero-section-image-2 {
         width: 100%;
-        padding: 1rem;
     }
 
     .hero-section-image-2 input {
@@ -199,4 +208,70 @@
     .preview-image {
         max-height: 150px;
     }
+}
+
+/* Mobile Design (max-width: 480px) */
+@media (max-width: 480px) {
+    .Hero-section {
+        margin: 1rem;
+    }
+
+    .hero-section-text {
+        width: 100%;
+        padding: 0.5rem;
+    }
+
+    .Upload-img-header {
+        font-size: 1.8rem;
+    }
+
+    .upload-img-text {
+        font-size: 0.9rem;
+    }
+
+    .see-button {
+        width: 100%;
+        padding-left: 0;
+    }
+
+    .see-button button {
+        padding: 0.6rem 1.2rem;
+        font-size: 0.9rem;
+    }
+
+    .hero-section-image {
+        padding: 0.5rem;
+    }
+
+    .hero-section-image-2 {
+        padding: 1rem;
+        width: 95%;
+    }
+
+    .hero-section-image-2 p {
+        font-size: 1rem;
+    }
+
+    .hero-section-image-2 input {
+        padding: 0.6rem;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .result-container {
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .success-message p,
+    .error-message p {
+        font-size: 1rem;
+    }
+}
+
+
+/* Animation for Response Message */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
