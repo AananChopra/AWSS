@@ -16,14 +16,14 @@ The system uses a three-layer machine learning model:
 ## 🚀 Technologies Used
 - **Frontend:** React, JSX, CSS, Framer Motion
 - **Backend:** Django, Python
-- **Machine Learning:** TensorFlow, NumPy, OpenCV
+- **Machine Learning:** Pytorch, NumPy, Pandas
 - **API Integration:** Axios
 
 ## 📦 Installation and Setup
 Follow these steps to set up the project locally:
 
 1. **Clone the Repository:**
-    git clone https://github.com/ShauviqMishra/awss.git  
+    git clone https://github.com/AananChopra/AWSS.git  
     cd awss
 
 2. **Backend Setup:**
